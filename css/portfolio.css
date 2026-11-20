@@ -1,0 +1,101 @@
+.portfolio {
+    padding: 120px 0
+}
+
+.portfolio-list {
+display: flex;
+flex-wrap: wrap;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+column-gap: 24px;
+row-gap: 48px;
+padding: 0;
+margin-top: 72px;
+}
+
+
+.portfolio-title {
+font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11111;
+letter-spacing: 0.02em;
+text-align: center;
+color: #2e2f42;
+}
+
+.portfolio-card {
+background: #fff;
+display: block;
+
+}
+
+.portfolio-thumb {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.portfolio-item {
+width: calc((100% - 48px) / 3);
+background: #fff;
+transition: 250ms ease-in-out;
+transition-property: box-shadow;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-caption {
+font-family: "Roboto", sans-serif;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+color: #2e2f42;
+margin-bottom: 8px;
+}
+
+.portfolio-desc {
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #434455;
+}
+
+.portfolio-content {
+padding: 32px 16px;
+border-bottom: 1px solid #e7e9fc;
+border-left: 1px solid #e7e9fc;
+border-right: 1px solid #e7e9fc;
+}
+
+.overlay {
+position: absolute;
+transform: translateY(360px);
+left: 0;
+top: 0;
+padding: 40px 32px;
+width: 360px;
+height: 287px;
+min-height: 240px;
+max-height: 300px;
+background: #4d5ae5;
+font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #f4f4fd;
+transition: 250ms ease-in-out;
+transition-property: transform;
+}
+
+.portfolio-item:hover .overlay {
+    transform: translateY(0);
+    
+}

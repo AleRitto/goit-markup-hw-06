@@ -1,0 +1,83 @@
+.header {
+border-bottom: 1px solid #e7e9fc;
+}
+
+.header .container {
+display: flex;
+max-width: 1158px;
+justify-content: flex-start;
+align-items: center;
+padding: 0 15px;
+margin: 0 auto; 
+}
+
+.header .contacts {
+    margin-left: 340px;
+}
+
+.logo {
+    color: #4d5ae5;
+}
+.accent-header {
+    color: #2e2f42;
+}
+
+.main-nav {
+    margin-left: 76px;
+}
+
+.main-nav-link {
+position: relative;
+font-weight: 500;
+display: block;
+padding: 24px 0;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-nav-list {
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: row;
+gap: 40px;
+margin: 0;
+padding: 0;
+
+}
+
+.main-nav-link:hover,
+.main-nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+    color: #404bbf;
+}
+
+.contacts-link {
+display: flex;
+gap: 24px;
+color: #434455;
+padding: 24px 0;
+display: inline-block;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+address {
+    font-style: normal;
+}
+
+
+.main-nav-link.current {
+color: #404bbf;
+}
+
+.main-nav-link.current::after {
+content: '';
+display: block;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+border-radius: 2px;
+height: 4px;
+background-color: #404bbf;
+}
