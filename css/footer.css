@@ -33,6 +33,8 @@
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 264px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .footer-container {
@@ -181,8 +183,8 @@
 
 @media only screen and (min-width: 768px) and (max-width: 1158px) {
   .footer-container {
-    padding-left: 108px;
-    padding-right: 108px;
+    padding-left: 92px;
+    padding-right: 92px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -197,7 +199,6 @@
   }
   .footer-info {
     align-items: flex-start;
-    max-width: 264px;
   }
   .footer-socials {
     align-items: flex-start;
@@ -224,6 +225,6 @@
     margin-right: 120px;
   }
   .footer-socials {
-    margin-right: 80px;
+    margin-right: auto;
   }
 }
