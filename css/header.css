@@ -125,8 +125,13 @@ address {
 }
 
 @media only screen and (max-width: 767.98px) {
-  .header .contacts {
+  .header address {
     display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header address {
+    display: block;
   }
 }
 
